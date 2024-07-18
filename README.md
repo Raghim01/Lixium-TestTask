@@ -29,7 +29,7 @@ docker-compose stop
 docker-compose start
 ```
 
-Now, when the container is app, you have to add a new connection in DB, using the configurations from <ins>docker-compose</ins> file:
+Now, when the container is up, you have to add a new connection in DB, using the configurations from <ins>docker-compose</ins> file:
 - port: 3307
 - password: root 
 
