@@ -19,7 +19,7 @@ In <ins>.env.example</ins> file you can find an example of how your own <ins>.en
 If you want to use a <ins>docker-compose</ins> file, that is already configured in the project, follow the steps:
 
 ```bash
-#create and up the container
+#create and start the container
 docker-compose up
 
 #stop container 
