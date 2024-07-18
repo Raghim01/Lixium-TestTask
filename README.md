@@ -33,7 +33,7 @@ Now, when the container is app, you have to add a new connection in DB, using th
 - port: 3307
 - password: root 
 
-Then you will see that you already have a schema called <u>twitter</u> . 
+Then you will see that you already have a schema called <ins>twitter</ins> . 
 
 ## Running the app
 After the previous step you should can run successfully the app:
