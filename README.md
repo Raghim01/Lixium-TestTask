@@ -31,12 +31,12 @@ docker-compose start
 
 Now, when the container is up, you have to add a new connection in DB, using the configurations from <ins>docker-compose</ins> file:
 - port: 3307
-- password: root 
+- password: root
 
-Then you will see that you already have a schema called <ins>twitter</ins> . 
+After connection is successfully created you will see that you already have a schema called <ins>twitter</ins> . 
 
 ## Running the app
-After the previous step you should can run successfully the app:
+After the previous step are done, you should can run successfully the app:
 
 ```bash
 # development - watch mode
