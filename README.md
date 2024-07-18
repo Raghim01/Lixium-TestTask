@@ -58,7 +58,7 @@ http://localhost:3000/api#/
 
 ## In order to see how some of the fucntional was implemented (validation, errors catching, etc.):
 
-1) Limiting the number of characters in tweets and comments to 160.\n
+1) Limiting the number of characters in tweets and comments to 160.<br />
    For that purpose was used a ValidationPipe, a powerful instrument provided by Nest.js which can be use to validate or transform some data.
    ```
      if (value && value.content !== undefined) {
