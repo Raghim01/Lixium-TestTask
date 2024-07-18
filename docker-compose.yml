@@ -9,7 +9,7 @@ services:
       - '3307:3306'
     environment:
       MYSQL_ROOT_PASSWORD: root # You can change it, but you should change after and the password in .env file - #DB_PASSWORD
-      MYSQL_DATABASE: tweeter
+      MYSQL_DATABASE: twitter
     volumes:
       - db:/var/lib/mysql
 
