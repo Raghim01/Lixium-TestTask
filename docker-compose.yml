@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:latest
+    container_name: lixium-tt
+    restart: always
+    ports:
+      - '3307:3306'
+    environment:
+      MYSQL_ROOT_PASSWORD: root # You can change it, but you should change after and the password in .env file - #DB_PASSWORD
+      MYSQL_DATABASE: tweeter
+    volumes:
+      - db:/var/lib/mysql
+
+volumes:
+  db:
