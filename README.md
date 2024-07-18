@@ -13,7 +13,7 @@ In <ins>.env.example</ins> file you can find an example of how your own <ins>.en
 - create an .env file;
 - copy the content from .env.example;
 - if needed change ONLY values of variables (put your own password, port, or username);
-- using MySQL Workbench connect to database and create a schema called twitter;
+- using MySQL Workbench connect to database and create a schema called <ins>twitter</ins>;
 
 ## Use docker-compose file.
 If you want to use a <ins>docker-compose</ins> file, that is already configured in the project, follow the steps:
