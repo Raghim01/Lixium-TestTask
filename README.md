@@ -85,7 +85,7 @@ http://localhost:3000/api#/
 3) In order to effectively identify errors that occur in the application, a custom exception filter has been created:<br />
    In catch() we have the access to <ins>exception</ins> that occur in the app, and the <ins>host: ArgumentHost</ins>, which gives us access to Request and Response of the app.
    ```
-  catch(exception: any, host: ArgumentsHost): void {
+   catch(exception: any, host: ArgumentsHost): void {
     const ctx = host.switchToHttp();
     const response = ctx.getResponse<Response>();
 
@@ -93,12 +93,13 @@ http://localhost:3000/api#/
 
     response.status(statusCode).json({ status: statusCode, message });
   }
-  ```
+   ```
+  
 
    And the <ins>parseException</ins> function which receives like argument current exception, and returns <ins>status code and message</ins> of the error.<br />
    In case that error is a HttpException error it will return respective message and status code, in other case will be returned a <ins>Server Error and Code: 500</ins>.
-  ```
-  private parseExeption(exception: any) {
+   ```
+   private parseExeption(exception: any) {
     let statusCode: HttpStatus = HttpStatus.INTERNAL_SERVER_ERROR;
     let message = ERROR_MESSAGE.serverError;
 
@@ -110,3 +111,5 @@ http://localhost:3000/api#/
     return { statusCode, message };
   }
    ```
+
+
